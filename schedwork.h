@@ -37,5 +37,6 @@ bool schedule(
     const size_t maxShifts,
     DailySchedule& sched
 );
+bool schedule_helper ( const AvailabilityMatrix& avail, const size_t dailyNeed, const size_t maxShifts, DailySchedule& sched, size_t day, std::vector<size_t>& hours);
 
 #endif
